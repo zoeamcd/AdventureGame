@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="script4.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1>adventure game</h1>
+<div id="hitPoints">HP: 20</div>
+<p>
+<div id="exits">go somewhere:
+    <button id="north" onclick="go(0)">north</button>
+    <button id="east" onclick="go(1)">east</button>
+    <button id="south" onclick="go(2)">south</button>
+    <button id="west" onclick="go(3)">west</button>
+</div>
+<p>
+<div id="text1" class="textA"></div>
+<div id="text2" class="textA">you can't go that way</div>
+<div id="text3" class="textA"></div>
+<div id="options" class="textB"><button id="attack" onclick="attack()">attack</button></div>
+<div id="text4" class="textB"></div>
+<div id="text5" class="textB"></div>
+<div id="text6" class="textB"></div>
+</body>
+</html>
+
+<!-- maybe make a better system for the text divs, and think about when you want them to disappear and update -->
